@@ -12,7 +12,6 @@ var merge = function(nums1, m, nums2, n) {
     for(let i = 0; i<n;i++){
         nums1.splice((nums1.length-n)+i,1,nums2[i])  
     }
-    
     for(let i = 1; i < nums1.length;i++){
         let ii =i-1
         while(nums1[ii]>nums1[i]){
@@ -23,6 +22,5 @@ var merge = function(nums1, m, nums2, n) {
             i--
             ii--
         }
-
     }
 };
