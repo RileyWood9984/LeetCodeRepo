@@ -13,7 +13,7 @@ var merge = function(nums1, m, nums2, n) {
         nums1.splice((nums1.length-n)+i,1,nums2[i])  
     }
     
-    for(let i = 0; i < nums1.length;i++){
+    for(let i = 1; i < nums1.length;i++){
         let ii =i-1
         while(nums1[ii]>nums1[i]){
             let lesser=nums1[ii]
