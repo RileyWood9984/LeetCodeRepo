@@ -8,8 +8,6 @@ var isPalindrome = function(s) {
     z=z.reverse()
     z=z.join('')
     s=s.reverse().join('')
-    console.log(z)
-    console.log(s)
     if(z===s){return true};
     return false;
 };
