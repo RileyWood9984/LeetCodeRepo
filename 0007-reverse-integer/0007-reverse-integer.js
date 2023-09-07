@@ -9,9 +9,7 @@ var reverse = function(x) {
         negative=true;
     }
     x+='';
-    x=x.split('');
-    x.reverse();
-    x=x.join('');
+    x=x.split('').reverse().join('');
     if(x>=2**31||x<=(-2)**31)return 0;
     if(negative)return x*-1;
     return x*1
