@@ -12,5 +12,5 @@ var reverse = function(x) {
     x=x.split('').reverse().join('');
     if(x>=2**31||x<=(-2)**31)return 0;
     if(negative)return x*-1;
-    return x*1
+    return x*1;
 };
