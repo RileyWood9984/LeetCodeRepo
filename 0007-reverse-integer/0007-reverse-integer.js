@@ -8,11 +8,11 @@ var reverse = function(x) {
         x*=-1;
         negative=true;
     }
-    let hold=x+'';
-    hold=hold.split('');
-    hold.reverse();
-    hold=hold.join('');
-    if(hold>=2**31||hold<=(-2)**31)return 0;
-    if(negative)return hold*-1;
-    return hold*1
+    x+='';
+    x=x.split('');
+    x.reverse();
+    x=x.join('');
+    if(x>=2**31||x<=(-2)**31)return 0;
+    if(negative)return x*-1;
+    return x*1
 };
